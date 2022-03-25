@@ -1,0 +1,12 @@
+.pollution{
+  position: relative !important;
+  left: 130px !important;
+  top: 10px !important;
+
+}
+#map{
+  height: 400px;
+
+  width: 100%;
+
+}
