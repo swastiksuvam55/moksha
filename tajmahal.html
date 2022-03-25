@@ -2,9 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
       <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
       <link rel="stylesheet" href="primary.css">
+      <script src="tajmahal.js"></script>
   </head>
   <body>
 
@@ -15,16 +18,17 @@
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">THE TAJ MAHAL</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base" >The Taj Mahal attracts from 7 to 8 million visitors annually, with more than 0.8 million from overseas. Most tourists visit in the cooler months of October, November and February. Polluting traffic is not allowed near the complex and tourists must either walk from parking lots or catch an electric bus.</p>
     </div>
-    <section class="text-gray-600 body-font relative">
-  <div class="absolute inset-0 bg-gray-300" bis_skin_checked="1">
-    <iframe width="100%" height="200%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="yes" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
-  </div>
-  <div class="container px-5 py-24 mx-auto flex" bis_skin_checked="1">
+
+    <div id="map"></div>
 
 
-</section>
+    </section>
+  
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLDS1RZMxEuazXbPJ8xX3UNJ-sldiCXb4&callback=initMap&v=weekly"></script>
 
-</section>
+
+
 
 <div class="pollution">
   <script type='text/javascript' src='https://widgets.waqi.info/jswgt/?size=xxl&city=@8186'></script><noscript>Not seeing a widget? (<a href='https://aqicn.org/'>More info</a>)</noscript>
