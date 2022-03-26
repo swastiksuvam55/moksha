@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
-      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="primary.css">
-      <script src="tajmahal.js"></script>
-  </head>
-  <body>
-    <div class="bg-fixed ..." style="background-image: url(img/tajwall.png)">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="primary.css">
+  <script src="tajmahal.js"></script>
+</head>
+
+<body style="margin:0 !important">
+  <div class="bg-fixed ..." style="background-image: url(img/tajwall.png)">
 
     <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
-    <div class="flex flex-col text-center w-full mb-20" bis_skin_checked="1" class="taj">
-      <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">7 WONDERS OF THE WORLD</h2>
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">THE TAJ MAHAL</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base" >The Taj Mahal attracts from 7 to 8 million visitors annually, with more than 0.8 million from overseas. Most tourists visit in the cooler months of October, November and February. Polluting traffic is not allowed near the complex and tourists must either walk from parking lots or catch an electric bus.</p>
-    </div>
-
-    <div id="map"></div>
-
-
+      <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
+        <div class="flex flex-col text-center w-full mb-20" bis_skin_checked="1" class="taj">
+          <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">7 WONDERS OF THE WORLD</h2>
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">THE TAJ MAHAL</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">The Taj Mahal attracts from 7 to 8 million visitors annually, with more than 0.8 million from overseas. Most tourists visit in the cooler months of October, November and February.
+            Polluting traffic is not allowed near the complex and tourists must either walk from parking lots or catch an electric bus.</p>
+        </div>
+        <div id="map"></div>
     </section>
-    </div>
+  </div>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLDS1RZMxEuazXbPJ8xX3UNJ-sldiCXb4&callback=initMap&v=weekly"></script>
+  <div class="pollution">
+    <script type='text/javascript' src='https://widgets.waqi.info/jswgt/?size=xxl&city=@8186'></script><noscript>Not seeing a widget? (<a href='https://aqicn.org/'>More info</a>)</noscript>
+  </div>
+<div class="redbus">
+  <p>BOOK A BUS</p>
+  <a href="https://www.redbus.in/bus-tickets/delhi-to-agra?fromCityName=Delhi&fromCityId=733&toCityName=Agra&toCityId=1290&onward=26-Mar-2022&srcCountry=IND&destCountry=IND&opId=0&busType=Any" target="_blank">
+    <img src="img/redbus-logo.gif" alt="redbus" style="width:100px;height:100px;">
+  </a>
+  </div>
+  <div class="tourist">
+    <img src="img/tourist.png" alt="">
+  </div>
 
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLDS1RZMxEuazXbPJ8xX3UNJ-sldiCXb4&callback=initMap&v=weekly"></script>
 
+<div class="do">
+  <img src="img/do-taj.png" alt="">
 
+</div>
+<div class="dont">
+  <img src="img/donts-taj.png" alt="">
+</div>
+<a class="weatherwidget-io" href="https://forecast7.com/en/27d1878d01/agra/" data-label_1="AGRA" data-label_2="WEATHER" data-theme="marine" >AGRA WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+<div class="tajnews">
+  <iframe width="1500" height="440"  src="https://rss.app/embed/v1/carousel/0DudhAGHfUCZcNAm" frameborder="0"></iframe>
 
-
-<div class="pollution">
-  <script type='text/javascript' src='https://widgets.waqi.info/jswgt/?size=xxl&city=@8186'></script><noscript>Not seeing a widget? (<a href='https://aqicn.org/'>More info</a>)</noscript>
+  </body>
 </div>
 
 
-
-  </body>
 </html>
